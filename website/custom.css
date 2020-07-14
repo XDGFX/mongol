@@ -1,0 +1,31 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img.full {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+div.impact {
+    background-color: #ed2020;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.impact p{
+    color: #fff; 
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+img.overlay {
+    position: absolute;
+    left: 0;
+}
