@@ -16,6 +16,10 @@ a {
   background: #eb2020;
 }
 
+.pageloader {
+    background-color: #eb2020;
+}
+
 img.full {
     object-fit: cover;
     top: 0;
