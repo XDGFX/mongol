@@ -20,7 +20,7 @@
                 style="position: absolute; z-index: -3; width: 10vw; top: 30%; left: 15%;">
             <img src="website/media/mongolia-foreground.png" class="rellax full" data-rellax-speed="-2"
                 data-rellax-zindex="-5" style="position: absolute; z-index: -5;">
-            <img src="website/media/mongolia-background.png" class="rellax full" data-rellax-speed="-7"
+            <img src="website/media/mongolia-background.jpg" class="rellax full" data-rellax-speed="-7"
                 data-rellax-zindex="-7" style="position: absolute; z-index: -7">
 
             <div class="rellax" data-rellax-speed="-2.5" data-rellax-zindex="-6"
@@ -48,9 +48,9 @@
     <section class="hero">
         <div class="hero-body impact" style="z-index: -4;">
             <div class="container">
-                <p class="title">My name is Callum, and in the summer of 2021, I am embarking on the greatest motoring
-                    adventure on the planet, with my
-                    two mates, Jack and Alberto.</p>
+                <p class="title">Hi! I'm Callum, a design engineering student from the University of Bath, and in the
+                    summer of 2021, I am embarking on the greatest motoring adventure on the planet - The Mongol Rally,
+                    alongside my two mates, Jack and Alberto.</p>
                 <br>
                 <div class="columns">
                     <div class="column is-narrow is-vertical-center has-text-centered">
@@ -59,12 +59,12 @@
                         </span>
                     </div>
                     <div class="column">
-                        <p>We are going to drive our (t)rusty Fiat Panda from Oxfordshire (home of Blenheim Palace,
-                            Didcot Railway Centre, and the Uffington White Horse) to Mongolia (home of the Mongolian
-                            Plateau, the Altai Mountains, and some camels).
-                            <br><br>This 10,000 mile trip has been an annual event since 2004, raising money for <b>Cool
-                                Earth</b> ever since it's first rally with only six teams. Since then, it has grown to
-                            around 300 teams every year, and in 2021, that cohort includes us for the first time.</p>
+                        <p>This entails driving our (t)rusty £400 Fiat Panda from Oxfordshire (home of Blenheim Palace,
+                            Didcot Railway Centre, and the Uffington White Horse) all the way to Mongolia (home of the
+                            Mongolian Plateau, the Altai Mountains, and some camels).
+                            <br><br>This 10,000 mile endeavour has been an annual event since 2004, raising money for
+                            <b>Cool Earth</b> ever since it's first rally with only six teams. Since then, it has grown
+                            to around 300 teams every year, and in 2021, that cohort includes us for the first time.</p>
                     </div>
                 </div>
             </div>
@@ -76,16 +76,23 @@
             <img id="scroller" src="website/media/route.svg" class="full" style="height: 100vh; position: relative;">
             <p
                 style="position: absolute; top: 50vh; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 6vw; font-weight: 600; text-shadow: 0px 0px 10px #eb2020;">
-                10,000
-                miles!</p>
+                10,000 miles!</p>
         </div>
 
         <script>
             var e = document.getElementById("scroller")
 
             window.onscroll = function () {
+                // Find scroll position
                 var viewportOffset = e.getBoundingClientRect();
-                var scrollPercent = 50 + -50 * (viewportOffset.top) / window.innerHeight
+
+                // Calculate the fraction of the image scrolled over
+                var scrollPercent = 0.5 + -0.5 * (viewportOffset.top) / window.innerHeight
+
+                // Add a bezier function and convert to percentage
+                var scrollPercent = (scrollPercent * scrollPercent * (3 - 2 * scrollPercent)) * 100
+
+                // Update image horizontal position
                 e.style.objectPosition = scrollPercent + "% 50%";
             };
 
@@ -96,7 +103,7 @@
     <section class="section">
         <div class="container">
 
-            <h2 class="title">We need your help!</h2>
+            <h2 class="title">But, to do this, we need your help!</h2>
             <br>
             <p>There are two areas we could use some assistance:<br><br>
 
@@ -109,10 +116,9 @@
                 </div>
                 <div class="column is-vertical-center">
                     <div>
-                        <h3 class="is-size-5">1. Fundraising for <b>Cool Earth</b>.</h3>
+                        <h3 class="is-size-5">1. Fundraising for Cool Earth.</h3>
                         Easy peasy, donate some money and help us support rainforest communities to halt
-                        deforestation and
-                        its impact on climate change.
+                        deforestation and its impact on climate change.
                     </div>
                 </div>
             </div>
@@ -138,7 +144,34 @@
                 </div>
             </div>
 
+            <br>
+            <p class="is-size-5">We really appreciate any help, even if it's as little as slipping our journey into a
+                conversation with
+                your family dog-walker, and sliding them the link to our website. Thank you!</p>
 
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Our lovely sponsors!</h2>
+            <div class="section has-background-white-ter">
+                <div class="tile is-ancestor">
+                    <div class="tile is-4">
+                        <!-- <img src="website/media/ybh.svg"> -->
+                    </div>
+                    <div class="tile is-4">
+                        <img src="website/media/ybh.svg">
+                    </div>
+                    <div class="tile is-4">
+                        <!-- <img src="website/media/ybh2.svg"> -->
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p class="is-size-5"></p>
         </div>
     </section>
 
@@ -163,8 +196,14 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
+                <span class="icon is-small">
+                    <img src="website/media/mongolia-flag.svg"></img>
+                </span>
                 <strong>Team Red Crayon</strong> by <a href="https://github.com/XDGFX">Callum Morrison</a>. Content from
                 <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font Awesome</a>.
+                <br>
+                Want to learn more about the rally? Head over to the official website - <a
+                    href="https://www.theadventurists.com/adventures/mongol-rally/">here!</a>
             </p>
         </div>
     </footer>
