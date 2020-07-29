@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,23 +8,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="website/custom.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script defer src="website/app.js"></script>
     <link rel="shortcut icon" href="website/icons/favicon.ico">
 </head>
 
 <body onload="removePageloader()">
 
     <div id="pageloader" class="pageloader is-active"></div>
-    <script>
-        function removePageloader() {
-            document.getElementById("pageloader").classList.remove("is-active")
-        }
-    </script>
 
-    <section class="hero">
-        <div class="hero-body" style="padding: 0; height: 100vh;">
+    <section class="hero is-fullheight">
+        <div class="hero-body is-paddingless">
 
             <img src="website/media/mongolia-front.png" class="rellax" data-rellax-speed="3" data-rellax-zindex="-3"
                 style="position: absolute; z-index: -3; width: 10vw; top: 30%; left: 15%;">
@@ -58,20 +55,26 @@
     <section class="hero">
         <div class="hero-body impact" style="z-index: -4;">
             <div class="container">
-                <p class="title">Hi! I'm Callum, a design engineering student from the University of Bath, and in the
-                    summer of 2021, I am embarking on the greatest motoring adventure on the planet - The Mongol Rally,
-                    alongside my two mates, Jack and Alberto.</p>
+                <p class="title is-hidden-mobile">I'm Callum Morrison, a design engineering student from the University
+                    of Bath, and in
+                    the summer of 2021, I am embarking on the greatest motoring adventure on the planet * - The Mongol
+                    Rally, alongside my two mates, Jack van Galen and Alberto Guerra Martinuzzi.</p>
+                <p class="subtitle is-hidden-tablet"><b>I'm Callum Morrison, a design engineering student from the
+                        University of Bath, and in
+                        the summer of 2021, I am embarking on the greatest motoring adventure on the planet * - The
+                        Mongol
+                        Rally, alongside my two mates, Jack van Galen and Alberto Guerra Martinuzzi.</b></p>
+                <p>* second only to the M25 at rush hour.</p>
                 <br>
                 <div class="columns">
                     <div class="column is-narrow is-vertical-center has-text-centered">
-                        <span class="icon has-text-white" style="width: 100px; height: 100px;">
+                        <span class="icon has-text-white" style="width: 100%; min-width: 100px; height: 100px;">
                             <i class="fas fa-map-marked-alt fa-5x"></i>
                         </span>
                     </div>
                     <div class="column">
-                        <p>This entails driving our (t)rusty £400 Fiat Panda from Oxfordshire (home of Blenheim Palace,
-                            Didcot Railway Centre, and the Uffington White Horse) all the way to Mongolia (home of the
-                            Mongolian Plateau, the Altai Mountains, and some camels).
+                        <p>This entails driving our (t)rusty 1.2 litre lunchbox from Oxford, UK all the way to Mongolia
+                            (home of the Mongolian Plateau, the Altai Mountains, and some camels).
                             <br><br>This 10,000 mile endeavour has been an annual event since 2004, raising money for
                             <b>Cool Earth</b> ever since it's first rally with only six teams. Since then, it has grown
                             to around 300 teams every year, and in 2021, that cohort includes us for the first time.</p>
@@ -81,101 +84,299 @@
         </div>
     </section>
 
-    <section style="background-color:white; position: relative;">
+    <section style="position: relative;">
         <div class="has-text-centered">
             <img id="scroller" src="website/media/route.svg" class="full" style="height: 100vh; position: relative;">
-            <p
-                style="position: absolute; top: 50vh; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 6vw; font-weight: 600; text-shadow: 0px 0px 10px #eb2020;">
+            <p class="handwritten"
+                style="position: absolute; top: 50vh; left: 50vw; transform: translate(-50%, -50%); color: white; font-size: 6rem; font-weight: 600; text-shadow: 0px 0px 10px #eb2020;">
                 10,000 miles!</p>
         </div>
-
-        <script>
-            var e = document.getElementById("scroller")
-
-            window.onscroll = function () {
-                // Find scroll position
-                var viewportOffset = e.getBoundingClientRect();
-
-                // Calculate the fraction of the image scrolled over
-                var scrollPercent = 0.5 + -0.5 * (viewportOffset.top) / window.innerHeight
-
-                // Add a bezier function and convert to percentage
-                var scrollPercent = (scrollPercent * scrollPercent * (3 - 2 * scrollPercent)) * 100
-
-                // Update image horizontal position
-                e.style.objectPosition = scrollPercent + "% 50%";
-            };
-
-        </script>
-
     </section>
 
     <section class="section">
         <div class="container">
 
-            <h2 class="title">But, to do this, we need your help!</h2>
+            <h2 class="title">But, to do this, we need your help</h2>
             <br>
-            <p>There are two areas we could use some assistance:<br><br>
+            <p>There are two areas you can get involved:</p><br><br>
 
 
             <div class="columns">
                 <div class="column is-narrow is-vertical-center has-text-centered">
-                    <span class="icon" style="width: 160px; height: 100px; color: #eb2020;">
+                    <span class="icon" style="width: 100%; min-width: 160px; height: 100px; color: #eb2020;">
                         <i class="fas fa-globe-africa fa-5x"></i>
                     </span>
                 </div>
                 <div class="column is-vertical-center">
                     <div>
                         <h3 class="is-size-5">1. Fundraising for Cool Earth.</h3>
-                        Easy peasy, donate some money and help us support rainforest communities to halt
-                        deforestation and its impact on climate change.
+                        Cool Earth is the official charity of the Mongol Rally. They work alongside rainforest
+                        communities to halt deforestation, helping to reduce it's impact on climate change.
+                        <p style="line-height: 0.5em;">&nbsp;</p>
+                        Tropical forests are among the world's most carbon-dense forests, due to their incredible
+                        capacity for carbon sequestration (capturing and storing carbon dioxide). Protecting them is one
+                        of the most effective ways we can tackle climate change.
+
+                        <!-- Other charities? -->
                     </div>
                 </div>
             </div>
 
             <div class="columns">
                 <div class="column is-narrow is-vertical-center has-text-centered">
-                    <span class="icon" style="width: 160px; height: 100px; color: #eb2020;">
+                    <span class="icon" style="width: 100%; min-width: 160px; height: 100px; color: #eb2020;">
                         <i class="fas fa-handshake fa-5x"></i>
                     </span>
                 </div>
                 <div class="column is-vertical-center">
-                    <div>
+                    <div">
                         <h3 class="is-size-5">2. Sponsorship for the journey.</h3>
-                        Want to help us reach the finish line?<p style="line-height: 0.5em;">&nbsp;</p>
+                        <p>Want to help us reach the finish line?
+                        <p style="line-height: 0.5em;">&nbsp;</p>
                         There are loads of ways of doing this, maybe you would like
                         your shiny company logo displayed proudly on our bonnet for all to see, and in return you
                         have some products or services that might help us?<p style="line-height: 0.5em;">&nbsp;</p>
                         Or maybe you have some old jerry cans lying around, which
                         you meant to throw out three years ago, but they might just stop us from getting
-                        stranded in the middle of bumf*ck nowhere? Get in contact below!
+                        stranded in the middle of nowhere? Get in contact below!
+
+                        <!-- Menu of items we need to buy - petrol, therapy for crazy, vaccinations -->
                         </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section is-hidden-mobile">
+        <div class="container">
+            <nav class="level">
+                <div class="level-left">
+                    <h3 class="subtitle">Shopping List</h2>
+                </div>
+                <div class="level-right">
+                    <span class="icon is-complete">
+                        <i class="fas fa-square"></i>
+                    </span>
+                    <span>
+                        Stuff we have
+                    </span>
+                    <div style="width: 16px;"></div>
+                    <span class="icon is-incomplete">
+                        <i class="fas fa-square"></i>
+                    </span>
+                    <span>
+                        Stuff we don't
+                    </span>
+                </div>
+            </nav>
+
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-complete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-car"></i>
+                        </span>
+                        <span class="media-content">
+                            A car
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-complete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-compact-disc"></i>
+                        </span>
+                        <span class="media-content">
+                            New brakes for the car
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-passport"></i>
+                        </span>
+                        <span class="media-content">
+                            Visas
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-syringe"></i>
+                        </span>
+                        <span class="media-content">
+                            Vaccinations
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-gas-pump"></i>
+                        </span>
+                        <span class="media-content">
+                            Uzbekistan petrol money
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-campground"></i>
+                        </span>
+                        <span class="media-content">
+                            A tent
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <img src="website/icons/tire-flat.svg"></i>
+                        </span>
+                        <span class="media-content">
+                            Spare wheels & tyres
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-video"></i>
+                        </span>
+                        <span class="media-content">
+                            Video camera
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-wrench"></i>
+                        </span>
+                        <span class="media-content">
+                            Hand tools
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-trailer"></i>
+                        </span>
+                        <span class="media-content">
+                            Roof rack / trailer
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-car-battery"></i>
+                        </span>
+                        <span class="media-content">
+                            Jump leads
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-utensils"></i>
+                        </span>
+                        <span class="media-content">
+                            Food
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-spray-can"></i>
+                        </span>
+                        <span class="media-content">
+                            Vehicle wrap
+                        </span>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="media notification is-vertical-center is-incomplete">
+                        <span class="icon is-medium media-left">
+                            <i class="fas fa-2x fa-oil-can"></i>
+                        </span>
+                        <span class="media-content">
+                            Spare parts
+                        </span>
                     </div>
                 </div>
             </div>
-
-            <br>
-            <p class="is-size-5">We really appreciate any help, even if it's as little as slipping our journey into a
-                conversation with
-                your family dog-walker, and sliding them the link to our website. Thank you!</p>
-
+        </div>
 
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="title">Our lovely sponsors!</h2>
+
+            <p class="is-size-5">We really appreciate any help, even if it's as little as slipping our journey into a
+                conversation with your family dog-walker, and sliding them the link to our website. Thank you!</p>
+            <br>
+            <p class="is-size-5 has-text-right">~ Callum Morrison</p>
+
+        </div>
+    </section>
+
+    <section class="section is-hidden-mobile">
+        <div class="columns">
+            <div class="column" style="position: relative;">
+                <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">
+                    <img class="full link" style="height: 100vh;" src="website/media/rainforest.jpg">
+                    <p class="title overlay">Donate to Cool Earth</p>
+                </a>
+            </div>
+            <div class="column" style="position: relative;">
+                <a href="mailto:team-red-crayon@gmail.com?subject=Mongol%20Rally">
+                    <img class="full link" style="height: 100vh;" src="website/media/rally.jpg">
+                    <p class="title overlay" style="transform: translate(-50%, -100%);">Contact Us</p>
+                    <p class="overlay" style="transform: translate(-50%, 20%);">team-red-crayon@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section is-hidden-tablet">
+        <div class="columns">
+            <div class="column" style="position: relative;">
+                <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">
+                    <img class="full" style="height: 30vh;" src="website/media/rainforest.jpg">
+                    <p class="title overlay">Donate to Cool Earth</p>
+                </a>
+            </div>
+            <div class="column" style="position: relative;">
+                <a href="mailto:team-red-crayon@gmail.com?subject=Mongol%20Rally">
+                    <img class="full" style="height: 30vh;" src="website/media/rally.jpg">
+                    <p class="title overlay" style="transform: translate(-50%, -100%);">Contact Us</p>
+                    <p class="overlay" style="transform: translate(-50%, 20%);">team-red-crayon@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Our lovely sponsors</h2>
             <div class="section has-background-white-ter">
-                <div class="tile is-ancestor">
-                    <div class="tile is-4">
-                        <!-- <img src="website/media/ybh.svg"> -->
-                    </div>
-                    <div class="tile is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-4">
                         <img src="website/media/ybh.svg">
                     </div>
-                    <div class="tile is-4">
-                        <!-- <img src="website/media/ybh2.svg"> -->
+                    <div class="column is-4">
+                        <img src="website/media/ybh.svg">
+                    </div>
+                    <div class="column is-4">
+                        <img src="website/media/ybh.svg">
                     </div>
                 </div>
             </div>
@@ -185,29 +386,11 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="columns">
-            <div class="column" style="position: relative;">
-                <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">
-                    <img class=" full link" style="height: 100vh;" src="website/media/rainforest.jpg">
-                    <p class="title overlay">Donate to Cool Earth</p>
-                </a>
-            </div>
-            <div class="column" style="position: relative;">
-                <a href="mailto:team-red-crayon@gmail.com?subject=Mongol Rally">
-                    <img class="full link" style="height: 100vh;" src="website/media/rally.jpg">
-                    <p class="title overlay" style="transform: translate(-50%, -100%);">Contact Us</p>
-                    <p class="overlay" style="transform: translate(-50%, 20%);">team-red-crayon@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer has-background-white-ter">
         <div class="content has-text-centered">
             <p>
                 <span class="icon is-small">
-                    <img src="website/media/mongolia-flag.svg"></img>
+                    <img src="website/media/mongolia-flag.svg">
                 </span>
                 <strong>Team Red Crayon</strong> by <a href="https://github.com/XDGFX">Callum Morrison</a>. Content from
                 <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font Awesome</a>.
