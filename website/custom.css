@@ -40,7 +40,7 @@ div.impact {
 }
 
 .impact p{
-    color: #fff; 
+    color: #fff;
 }
 
 .is-vertical-center {
@@ -96,3 +96,9 @@ img.link {
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
+a.is-disabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
