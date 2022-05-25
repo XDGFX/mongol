@@ -81,8 +81,16 @@ p.overlay {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    text-shadow: 0 0 15px black, 0 0 30px black, 0 0 60px black;;
+    /* text-shadow: 0 0 15px black, 0 0 30px black, 0 0 60px black;; */
+    background-color: #ed2020;
     pointer-events: none;
+}
+
+.sticker {
+    color: #fff;
+    background-color: #ed2020;
+    width: fit-content;
+    padding: 5px;
 }
 
 img.link:hover {
