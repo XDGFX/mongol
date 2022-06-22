@@ -111,3 +111,15 @@ a.is-disabled {
     opacity: 0.5;
     text-decoration: none;
 }
+
+a.donate-now-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+}
+
+a.donate-now-button img {
+    display: block;
+}
+
