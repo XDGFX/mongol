@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Team Pandrover - Mongol Rally</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="website/custom.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+        <script defer src="website/app.js"></script>
+        <link rel="shortcut icon" href="website/icons/favicon.ico" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team Pandrover - Mongol Rally</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="website/custom.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script defer src="website/app.js"></script>
-    <link rel="shortcut icon" href="website/icons/favicon.ico">
-</head>
-
-<body onload="removePageloader()">
-        <a class="donate-now-button is-hidden-mobile" href="https://www.justgiving.com/fundraising/pandrover">
+    <body onload="removePageloader()">
+        <a
+            class="donate-now-button is-hidden-mobile"
+            href="https://www.justgiving.com/fundraising/pandrover"
+        >
             <img src="website/media/donate_now.png" alt="donate now" />
         </a>
 
-        <a class="donate-now-button is-hidden-tablet" href="https://www.justgiving.com/fundraising/pandrover">
+        <a
+            class="donate-now-button is-hidden-tablet"
+            href="https://www.justgiving.com/fundraising/pandrover"
+        >
             <img src="website/media/donate_now_mobile.png" alt="donate now" />
         </a>
 
-    <div id="pageloader" class="pageloader is-active"></div>
+        <div id="pageloader" class="pageloader is-active"></div>
 
-    <section class="hero is-fullheight">
-        <div class="hero-body is-paddingless">
+        <section class="hero is-fullheight">
+            <div class="hero-body is-paddingless">
+                <img
+                    src="website/media/mongolia-front.png"
+                    class="rellax"
+                    data-rellax-speed="3"
+                    data-rellax-zindex="-3"
+                    style="
+                        position: absolute;
+                        z-index: -3;
+                        width: 10vw;
+                        min-width: 100px;
+                        top: 30%;
+                        left: 20%;
+                    "
+                />
+                <img
+                    src="website/media/mongolia-foreground.png"
+                    class="rellax full"
+                    data-rellax-speed="-2"
+                    data-rellax-zindex="-5"
+                    style="position: absolute; z-index: -5"
+                />
+                <img
+                    src="website/media/mongolia-background.jpg"
+                    class="rellax full"
+                    data-rellax-speed="-7"
+                    data-rellax-zindex="-7"
+                    style="position: absolute; z-index: -7"
+                />
 
-            <img src="website/media/mongolia-front.png" class="rellax" data-rellax-speed="3" data-rellax-zindex="-3"
-                style="position:
-            absolute; z-index: -3; width: 10vw; min-width: 100px; top: 30%; left: 20%;">
-            <img src="website/media/mongolia-foreground.png" class="rellax full" data-rellax-speed="-2"
-                data-rellax-zindex="-5" style="position:
-            absolute; z-index: -5;">
-            <img src="website/media/mongolia-background.jpg" class="rellax full" data-rellax-speed="-7"
-                data-rellax-zindex="-7" style="position:
-            absolute; z-index: -7">
-
-            <!-- Centre the logo within the div -->
-            <div class="rellax" data-rellax-speed="-2.5" data-rellax-zindex="-6"
-            style="position: absolute; top: 2rem; width: 100%; z-index: -6;
-            display: flex; justify-content: center">
-                <!-- <p class="title has-text-centered" style="margin: 0;
+                <!-- Centre the logo within the div -->
+                <div
+                    class="rellax"
+                    data-rellax-speed="-2.5"
+                    data-rellax-zindex="-6"
+                    style="
+                        position: absolute;
+                        top: 2rem;
+                        width: 100%;
+                        z-index: -6;
+                        display: flex;
+                        justify-content: center;
+                    "
+                >
+                    <!-- <p class="title has-text-centered" style="margin: 0;
                 padding-right: 60vw; color: #fff; text-shadow: 0px 0px 20px
                 grey">
                     TEAM
@@ -53,268 +98,315 @@
                 margin-top: -2vw; color: #fff; text-shadow: 0px 0px 50px grey;">
                     PANDROVER
                 </h1> -->
-                <img src="website/media/pandrover_logo.png"
-                style="width: 800px">
-            </div>
-            <div>
-                <p class="has-text-centered" style="position: absolute; z-index:
-                -4; bottom: 3vh; width: 100%; color: #fff; font-weight: 600;
-                text-shadow: 0px 0px 7px black;">
-                    scroll for more<br>
-                    <span class="icon">
-                        <i class="fas fa-sort-down fa-2x"></i>
-                    </span>
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="hero-body impact" style="z-index: -4;">
-            <div class="container">
-                <p class="title is-hidden-mobile">I'm Callum Morrison, a design
-                    engineering graduate from the University of Bath, and in the
-                    summer of <s>2021</s> 2022 (thanks to COVID), I am embarking on
-                    the greatest motoring adventure on the planet * - The Mongol
-                    Rally, alongside my good mate, Jack van Galen.</p>
-                <p class="subtitle is-hidden-tablet"><b>I'm Callum Morrison, a
-                        design engineering graduate from the University of Bath, and in
-                        the summer of <s>2021</s> 2022 (thanks to COVID), I am embarking
-                        on the greatest motoring adventure on the planet * - The Mongol
-                        Rally, alongside my good mate, Jack van Galen.</b></p>
-                <p>* second only to the M25 at rush hour.</p>
-                <br>
-                <div class="columns">
-                    <div class="column is-narrow is-vertical-center
-                    has-text-centered">
-                        <span class="icon has-text-white" style="width: 100%;
-                        min-width: 100px; height: 100px;">
-                            <i class="fas fa-map-marked-alt fa-5x"></i>
+                    <img
+                        src="website/media/pandrover_logo.png"
+                        style="width: 800px"
+                    />
+                </div>
+                <div>
+                    <p
+                        class="has-text-centered"
+                        style="
+                            position: absolute;
+                            z-index: -4;
+                            bottom: 3vh;
+                            width: 100%;
+                            color: #fff;
+                            font-weight: 600;
+                            text-shadow: 0px 0px 7px black;
+                        "
+                    >
+                        scroll for more<br />
+                        <span class="icon">
+                            <i class="fas fa-sort-down fa-2x"></i>
                         </span>
-                    </div>
-                    <div class="column">
-                        <p>This entails driving our (t)rusty 1.2 litre lunchbox
-                        from Oxford, UK all the way to Georgia (home of the cave
-                        city of Vardzia, the Greater Caucasus Mountain Range,
-                        and some bears).
-                            <br><br>The Mongol Rally has been an
-                            annual event since 2004, raising money for charity
-                            ever since it's first rally with only six teams.
-                            Since then, it has grown to around 300 teams every
-                            year, and in 2022, that cohort includes us for the
-                            first time.
-                            <br><br>In previous years, the rally finish line was
-                            all the way over in Mongolia (hence the name), but
-                            due to various geopolitical and global-pandemical
-                            reasons it's a bit different now. That doesn't mean
-                            it won't be a monumental challenge, where calamities
-                            and shenanigans are guaranteed.
-                        </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-body impact" style="z-index: -4">
+                <div class="container">
+                    <p class="title is-hidden-mobile">
+                        I'm Callum Morrison, a design engineering graduate from
+                        the University of Bath, and in the summer of
+                        <s>2021</s> 2022 (thanks to COVID), I am embarking on
+                        the greatest motoring adventure on the planet * - The
+                        Mongol Rally, alongside my good mate, Jack van Galen.
+                    </p>
+                    <p class="subtitle is-hidden-tablet">
+                        <b
+                            >I'm Callum Morrison, a design engineering graduate
+                            from the University of Bath, and in the summer of
+                            <s>2021</s> 2022 (thanks to COVID), I am embarking
+                            on the greatest motoring adventure on the planet * -
+                            The Mongol Rally, alongside my good mate, Jack van
+                            Galen.</b
+                        >
+                    </p>
+                    <p>* second only to the M25 at rush hour.</p>
+                    <br />
+                    <div class="columns">
+                        <div
+                            class="column is-narrow is-vertical-center has-text-centered"
+                        >
+                            <span
+                                class="icon has-text-white"
+                                style="
+                                    width: 100%;
+                                    min-width: 100px;
+                                    height: 100px;
+                                "
+                            >
+                                <i class="fas fa-map-marked-alt fa-5x"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <p>
+                                This entails driving our (t)rusty 1.2 litre
+                                lunchbox from Oxford, UK all the way to Georgia
+                                (home of the cave city of Vardzia, the Greater
+                                Caucasus Mountain Range, and some bears).
+                                <br /><br />The Mongol Rally has been an annual
+                                event since 2004, raising money for charity ever
+                                since it's first rally with only six teams.
+                                Since then, it has grown to around 300 teams
+                                every year, and in 2022, that cohort includes us
+                                for the first time. <br /><br />In previous
+                                years, the rally finish line was all the way
+                                over in Mongolia (hence the name), but due to
+                                various geopolitical and global-pandemical
+                                reasons it's a bit different now. That doesn't
+                                mean it won't be a monumental challenge, where
+                                calamities and shenanigans are guaranteed.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section style="position: relative;">
-        <div class="has-text-centered">
-            <!-- <img id="scroller" src="website/media/route_alt.svg"
+        <section style="position: relative">
+            <div class="has-text-centered">
+                <!-- <img id="scroller" src="website/media/route_alt.svg"
             class="full" style="height: 100vh; position: relative;"> -->
-            <img src="website/media/panda.jpg" class="full" style="height: 100vh; position: relative;">
-            <!-- <p class="handwritten" style="position: absolute; top: 50vh; left:
+                <img
+                    src="website/media/panda.jpg"
+                    class="full"
+                    style="height: 100vh; position: relative"
+                />
+                <!-- <p class="handwritten" style="position: absolute; top: 50vh; left:
             50vw; transform: translate(-50%, -50%); color: white; font-size:
             6rem; font-weight: 600; text-shadow: 0px 0px 10px #eb2020;">
                 5,000km!</p> -->
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="section">
-        <div class="container">
+        <section class="section">
+            <div class="container">
+                <h2 class="title sticker">
+                    But, to do this, we need your help
+                </h2>
+                <br />
+                <p>There are two areas you can get involved:</p>
+                <br /><br />
 
-            <h2 class="title sticker">But, to do this, we need your help</h2>
-            <br>
-            <p>There are two areas you can get involved:</p><br><br>
+                <div class="columns">
+                    <div
+                        class="column is-narrow is-vertical-center has-text-centered"
+                    >
+                        <span
+                            class="icon"
+                            style="
+                                width: 100%;
+                                min-width: 160px;
+                                height: 100px;
+                                color: #eb2020;
+                            "
+                        >
+                            <i class="fas fa-globe-africa fa-5x"></i>
+                        </span>
+                    </div>
+                    <div class="column is-vertical-center">
+                        <div>
+                            <h3 class="is-size-5">
+                                1. Fundraising for Ukraine.
+                            </h3>
+                            The Disaster Emergency Committee is the official
+                            charity of this year's Mongol Rally. These guys are
+                            doing a brilliant job of putting money into the
+                            hands of trusted organisations in a way that gets
+                            help to where it’s needed fast.
 
+                            <p style="line-height: 0.5em">&nbsp;</p>
+                            - £50 could provide blankets for 4 families to keep
+                            them warm
+                            <br />
+                            - £100 could provide emergency food for 5 people for
+                            one month
+                            <br />
+                            - £150 could provide blankets for 12 families to
+                            keep them warm
+                            <br />
+                            - £300 could provide emergency food for 6 families
+                            for one month
 
-            <div class="columns">
-                <div class="column is-narrow is-vertical-center
-                has-text-centered">
-                    <span class="icon" style="width: 100%; min-width: 160px;
-                    height: 100px; color: #eb2020;">
-                        <i class="fas fa-globe-africa fa-5x"></i>
-                    </span>
+                            <!-- Other charities? -->
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-vertical-center">
-                    <div>
-                        <h3 class="is-size-5">1. Fundraising for Ukraine.</h3>
-                        The Disaster Emergency Committee is the official charity
-                        of this year's Mongol Rally. These guys are doing a
-                        brilliant job of putting money into the hands of trusted
-                        organisations in a way that gets help to where it’s
-                        needed fast.
 
-                        <p style="line-height: 0.5em;">&nbsp;</p>
-                        - £50 could provide blankets for 4 families to keep them
-                        warm
-                        <br>
-                        - £100 could provide emergency food for 5 people for one
-                        month
-                        <br>
-                        - £150 could provide blankets for 12 families to keep
-                        them warm
-                        <br>
-                        - £300 could provide emergency food for 6 families for one month
-
-                        <!-- Other charities? -->
+                <div class="columns">
+                    <div
+                        class="column is-narrow is-vertical-center has-text-centered"
+                    >
+                        <span
+                            class="icon"
+                            style="
+                                width: 100%;
+                                min-width: 160px;
+                                height: 100px;
+                                color: #eb2020;
+                            "
+                        >
+                            <i class="fas fa-handshake fa-5x"></i>
+                        </span>
+                    </div>
+                    <div class="column is-vertical-center">
+                        <div>
+                            <h3 class="is-size-5">
+                                2. Sponsorship for the journey.
+                            </h3>
+                            <p>
+                                Want to help us reach the finish line?
+                                <span style="line-height: 0.5em">&nbsp;</span>
+                                There are loads of ways of doing this, maybe you
+                                would like your shiny company logo displayed
+                                proudly on our bonnet for all to see, and in
+                                return you have some products or services that
+                                might help us?<span style="line-height: 0.5em"
+                                    >&nbsp;</span
+                                >
+                                Or maybe you have some old jerry cans lying
+                                around, which you meant to throw out three years
+                                ago, but they might just stop us from getting
+                                stranded in the middle of nowhere? Get in
+                                contact below!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="columns">
-                <div class="column is-narrow is-vertical-center
-                has-text-centered">
-                    <span class="icon" style="width: 100%; min-width: 160px;
-                    height: 100px; color: #eb2020;">
-                        <i class="fas fa-handshake fa-5x"></i>
-                    </span>
-                </div>
-                <div class="column is-vertical-center">
-                    <div">
-                        <h3 class="is-size-5">2. Sponsorship for the
-                            journey.</h3>
-                        <p>Want to help us reach the finish line?
-                        <p style="line-height: 0.5em;">&nbsp;</p>
-                        There are loads of ways of doing this, maybe you would
-                        like your shiny company logo displayed proudly on our
-                        bonnet for all to see, and in return you have some
-                        products or services that might help us?<p style="line-height: 0.5em;">&nbsp;</p>
-                        Or maybe you have some old jerry cans lying around,
-                        which you meant to throw out three years ago, but they
-                        might just stop us from getting stranded in the middle
-                        of nowhere? Get in contact below!
+        <section class="section is-hidden-mobile">
+            <div class="container">
+                <nav class="level">
+                    <div class="level-left">
+                        <h3 class="subtitle">Shopping List</h3>
+                    </div>
+                    <div class="level-right">
+                        <span class="icon is-complete">
+                            <i class="fas fa-square"></i>
+                        </span>
+                        <span> Stuff we have </span>
+                        <div style="width: 16px"></div>
+                        <span class="icon is-incomplete">
+                            <i class="fas fa-square"></i>
+                        </span>
+                        <span> Stuff we don't </span>
+                    </div>
+                </nav>
 
-                        <!-- Menu of items we need to buy - petrol, therapy for
-                        crazy, vaccinations -->
-                        </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section is-hidden-mobile">
-        <div class="container">
-            <nav class="level">
-                <div class="level-left">
-                    <h3 class="subtitle">Shopping List</h2>
-                </div>
-                <div class="level-right">
-                    <span class="icon is-complete">
-                        <i class="fas fa-square"></i>
-                    </span>
-                    <span>
-                        Stuff we have
-                    </span>
-                    <div style="width: 16px;"></div>
-                    <span class="icon is-incomplete">
-                        <i class="fas fa-square"></i>
-                    </span>
-                    <span>
-                        Stuff we don't
-                    </span>
-                </div>
-            </nav>
-
-            <div class="columns is-multiline">
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-car"></i>
-                        </span>
-                        <span class="media-content">
-                            A car
-                        </span>
+                <div class="columns is-multiline">
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-car"></i>
+                            </span>
+                            <span class="media-content"> A car </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-compact-disc"></i>
-                        </span>
-                        <span class="media-content">
-                            New brakes
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-compact-disc"></i>
+                            </span>
+                            <span class="media-content"> New brakes </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-life-ring"></i>
-                        </span>
-                        <span class="media-content">
-                            New clutch
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-life-ring"></i>
+                            </span>
+                            <span class="media-content"> New clutch </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <img src="website/icons/tire-flat.svg"></i>
-                        </span>
-                        <span class="media-content">
-                            Spare wheels & tyres
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <img src="website/icons/tire-flat.svg" />
+                            </span>
+                            <span class="media-content">
+                                Spare wheels & tyres
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-trailer"></i>
-                        </span>
-                        <span class="media-content">
-                            Roof rack / trailer
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-trailer"></i>
+                            </span>
+                            <span class="media-content">
+                                Roof rack / trailer
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-complete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-car-battery"></i>
-                        </span>
-                        <span class="media-content">
-                            Jump leads
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-complete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-car-battery"></i>
+                            </span>
+                            <span class="media-content"> Jump leads </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-passport"></i>
-                        </span>
-                        <span class="media-content">
-                            Visas
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-passport"></i>
+                            </span>
+                            <span class="media-content"> Visas </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-syringe"></i>
-                        </span>
-                        <span class="media-content">
-                            Travel Vaccinations
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-syringe"></i>
+                            </span>
+                            <span class="media-content">
+                                Travel Vaccinations
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="column is-3">
+                    <!-- <div class="column is-3">
                     <div class="media notification is-vertical-center
                     is-incomplete">
                         <span class="icon is-medium media-left">
@@ -325,238 +417,298 @@
                         </span>
                     </div>
                 </div> -->
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-gas-pump"></i>
-                        </span>
-                        <span class="media-content">
-                            Bulgarian petrol money
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-gas-pump"></i>
+                            </span>
+                            <span class="media-content">
+                                Bulgarian petrol money
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-campground"></i>
-                        </span>
-                        <span class="media-content">
-                            A tent
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-campground"></i>
+                            </span>
+                            <span class="media-content"> A tent </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-video"></i>
-                        </span>
-                        <span class="media-content">
-                            Video camera
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-video"></i>
+                            </span>
+                            <span class="media-content"> Video camera </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-wrench"></i>
-                        </span>
-                        <span class="media-content">
-                            Hand tools
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-wrench"></i>
+                            </span>
+                            <span class="media-content"> Hand tools </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-utensils"></i>
-                        </span>
-                        <span class="media-content">
-                            Food
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-utensils"></i>
+                            </span>
+                            <span class="media-content"> Food </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-spray-can"></i>
-                        </span>
-                        <span class="media-content">
-                            Vehicle wrap
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-spray-can"></i>
+                            </span>
+                            <span class="media-content"> Vehicle wrap </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column is-3">
-                    <div class="media notification is-vertical-center
-                    is-incomplete">
-                        <span class="icon is-medium media-left">
-                            <i class="fas fa-2x fa-oil-can"></i>
-                        </span>
-                        <span class="media-content">
-                            Spare parts
-                        </span>
+                    <div class="column is-3">
+                        <div
+                            class="media notification is-vertical-center is-incomplete"
+                        >
+                            <span class="icon is-medium media-left">
+                                <i class="fas fa-2x fa-oil-can"></i>
+                            </span>
+                            <span class="media-content"> Spare parts </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-
-            <p class="is-size-5">We really appreciate any help, even if it's as
-                little as slipping our journey into a conversation with your family
-                dog-walker, and sliding them the link to our website. Thank you!</p>
-            <br>
-            <p class="is-size-5 has-text-right">~ Callum</p>
-
-        </div>
-    </section>
-
-    <section class="section is-hidden-mobile">
-        <div class="columns">
-            <div class="column" style="position: relative;">
-                <a href="https://www.justgiving.com/fundraising/pandrover">
-                    <img class="full link" style="height: 60vh;" src="website/media/ukraine.jpg">
-                    <p class="title overlay" style="transform: translate(-50%,
-                    -100%);">Donate</p>
-                    <p class="overlay" style="transform: translate(-50%,
-                    20%);">DEC Ukraine Appeal</p>
-                </a>
+        <section class="section">
+            <div class="container">
+                <p class="is-size-5">
+                    We really appreciate any help, even if it's as little as
+                    slipping our journey into a conversation with your family
+                    dog-walker, and sliding them the link to our website. Thank
+                    you!
+                </p>
+                <br />
+                <p class="is-size-5 has-text-right">~ Callum</p>
             </div>
-            <div class="column" style="position: relative;">
-                <a href="mailto:teampandrover@gmail.com?subject=Mongol%20Rally">
-                    <img class="full link" style="height: 60vh;" src="website/media/rally.jpg">
-                    <p class="title overlay" style="transform: translate(-50%,
-                    -100%);">Contact Us</p>
-                    <p class="overlay" style="transform: translate(-50%,
-                    20%);">teampandrover@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section is-hidden-tablet">
-        <div class="columns">
-            <div class="column" style="position: relative;">
-                <a href="https://www.justgiving.com/fundraising/pandrover">
-                    <img class="full" style="height: 30vh;" src="website/media/ukraine.jpg">
-                    <p class="title overlay" style="transform: translate(-50%,
-                    -100%);">Donate</p>
-                    <p class="overlay" style="transform: translate(-50%,
-                    20%);">DEC Ukraine Appeal</p>
-                </a>
-            </div>
-            <div class="column" style="position: relative;">
-                <a href="mailto:teampandrover@gmail.com?subject=Mongol%20Rally">
-                    <img class="full" style="height: 30vh;" src="website/media/rally.jpg">
-                    <p class="title overlay" style="transform: translate(-50%,
-                    -100%);">Contact Us</p>
-                    <p class="overlay" style="transform: translate(-50%,
-                    20%);">teampandrover@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container has-text-centered">
-            <h2 class="title">The Poles Of Inconvenience</h2>
-            <p class="is-size-5">
-                Although COVID scuppered our plans for the full-fat Mongol Rally
-                in 2021, we did manage to partake in the Mongol Rally: Poles Of
-                Inconvenience. This was a scaled down version, within the
-                confines of the United Kingdom. We did still manage to make it
-                difficult for ourselves however...
-            </p>
-            <br>
-            <div class="columns is-centered">
-                <div class="column is-one-fifth"></div>
-                <div class="column">
-                    <figure class="image is-16by9">
-                        <iframe class="has-ratio" width="640" height="360"
-                            src="https://www.youtube.com/embed/w1D9OU9xMWM" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write;
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </figure>
+        <section class="section is-hidden-mobile">
+            <div class="columns">
+                <div class="column" style="position: relative">
+                    <a href="https://www.justgiving.com/fundraising/pandrover">
+                        <img
+                            class="full link"
+                            style="height: 60vh"
+                            src="website/media/ukraine.jpg"
+                        />
+                        <p
+                            class="title overlay"
+                            style="transform: translate(-50%, -100%)"
+                        >
+                            Donate
+                        </p>
+                        <p
+                            class="overlay"
+                            style="transform: translate(-50%, 20%)"
+                        >
+                            DEC Ukraine Appeal
+                        </p>
+                    </a>
                 </div>
-                <div class="column is-one-fifth"></div>
+                <div class="column" style="position: relative">
+                    <a
+                        href="mailto:teampandrover@gmail.com?subject=Mongol%20Rally"
+                    >
+                        <img
+                            class="full link"
+                            style="height: 60vh"
+                            src="website/media/rally.jpg"
+                        />
+                        <p
+                            class="title overlay"
+                            style="transform: translate(-50%, -100%)"
+                        >
+                            Contact Us
+                        </p>
+                        <p
+                            class="overlay"
+                            style="transform: translate(-50%, 20%)"
+                        >
+                            teampandrover@gmail.com
+                        </p>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="title sticker">Our lovely sponsors</h2>
-            <div class="section has-background-white-ter">
-                <div class="columns is-multiline">
-                    <div class="column is-4" >
-                        <a href="https://unmnd.com/">
-                            <img src="website/media/unmnd_logo.png">
-                        </a>
+        <section class="section is-hidden-tablet">
+            <div class="columns">
+                <div class="column" style="position: relative">
+                    <a href="https://www.justgiving.com/fundraising/pandrover">
+                        <img
+                            class="full"
+                            style="height: 30vh"
+                            src="website/media/ukraine.jpg"
+                        />
+                        <p
+                            class="title overlay"
+                            style="transform: translate(-50%, -100%)"
+                        >
+                            Donate
+                        </p>
+                        <p
+                            class="overlay"
+                            style="transform: translate(-50%, 20%)"
+                        >
+                            DEC Ukraine Appeal
+                        </p>
+                    </a>
+                </div>
+                <div class="column" style="position: relative">
+                    <a
+                        href="mailto:teampandrover@gmail.com?subject=Mongol%20Rally"
+                    >
+                        <img
+                            class="full"
+                            style="height: 30vh"
+                            src="website/media/rally.jpg"
+                        />
+                        <p
+                            class="title overlay"
+                            style="transform: translate(-50%, -100%)"
+                        >
+                            Contact Us
+                        </p>
+                        <p
+                            class="overlay"
+                            style="transform: translate(-50%, 20%)"
+                        >
+                            teampandrover@gmail.com
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container has-text-centered">
+                <h2 class="title">The Poles Of Inconvenience</h2>
+                <p class="is-size-5">
+                    Although COVID scuppered our plans for the full-fat Mongol
+                    Rally in 2021, we did manage to partake in the Mongol Rally:
+                    Poles Of Inconvenience. This was a scaled down version,
+                    within the confines of the United Kingdom. We did still
+                    manage to make it difficult for ourselves however...
+                </p>
+                <br />
+                <div class="columns is-centered">
+                    <div class="column is-one-fifth"></div>
+                    <div class="column">
+                        <figure class="image is-16by9">
+                            <iframe
+                                class="has-ratio"
+                                width="640"
+                                height="360"
+                                src="https://www.youtube.com/embed/w1D9OU9xMWM"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </figure>
                     </div>
-                    <div class="column is-4" >
-                        <a href="https://www.facebook.com/HadleyServicesLtd/">
-                            <img src="website/media/hadley_logo.png">
-                        </a>
-                    </div>
-                    <div class="column is-4" >
-                        <a href="https://fourby.co.uk/">
-                            <img src="website/media/fourby_logo.png">
-                        </a>
-                    </div>
-                    <div class="column is-4" >
-                        <a href="https://www.mpdonline.co.uk/">
-                            <img src="website/media/mpd_logo.png">
-                        </a>
-                    </div>
-                    <div class="column is-4" >
-                        <a href="https://www.acegearboxes.co.uk/">
-                            <img src="website/media/ace_logo.png">
-                        </a>
-                    </div>
-                    <div class="column is-4">
-                        <a >
-                            <img src="website/media/ybh.svg">
-                        </a>
-                    </div>
-                    <!-- <div class="column is-4">
+                    <div class="column is-one-fifth"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title sticker">Our lovely sponsors</h2>
+                <div class="section has-background-white-ter">
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <a href="https://unmnd.com/">
+                                <img src="website/media/unmnd_logo.png" />
+                            </a>
+                        </div>
+                        <div class="column is-4">
+                            <a
+                                href="https://www.facebook.com/HadleyServicesLtd/"
+                            >
+                                <img src="website/media/hadley_logo.png" />
+                            </a>
+                        </div>
+                        <div class="column is-4">
+                            <a href="https://fourby.co.uk/">
+                                <img src="website/media/fourby_logo.png" />
+                            </a>
+                        </div>
+                        <div class="column is-4">
+                            <a href="https://www.mpdonline.co.uk/">
+                                <img src="website/media/mpd_logo.png" />
+                            </a>
+                        </div>
+                        <div class="column is-4">
+                            <a href="https://www.acegearboxes.co.uk/">
+                                <img src="website/media/ace_logo.png" />
+                            </a>
+                        </div>
+                        <div class="column is-4">
+                            <a>
+                                <img src="website/media/ybh.svg" />
+                            </a>
+                        </div>
+                        <!-- <div class="column is-4">
                         <img src="website/media/ybh.svg">
                     </div> -->
+                    </div>
                 </div>
+
+                <br />
+                <p class="is-size-5"></p>
             </div>
+        </section>
 
-            <br>
-            <p class="is-size-5"></p>
-        </div>
-    </section>
+        <footer class="footer has-background-white-ter">
+            <div class="content has-text-centered">
+                <p>
+                    <span class="icon is-small">
+                        <img src="website/media/mongolia-flag.svg" />
+                    </span>
+                    <strong>Team Pandrover</strong> by
+                    <a href="https://xdgfx.com">Callum Morrison</a>. Content
+                    from <a href="https://unsplash.com/">Unsplash</a> and
+                    <a href="https://fontawesome.com/">Font Awesome</a>.
+                    <br />
+                    Want to learn more about the rally? Head over to the
+                    official website -
+                    <a
+                        href="https://www.theadventurists.com/adventures/poles-of-inconvenience/"
+                        >here!</a
+                    >
+                </p>
+            </div>
+        </footer>
 
-    <footer class="footer has-background-white-ter">
-        <div class="content has-text-centered">
-            <p>
-                <span class="icon is-small">
-                    <img src="website/media/mongolia-flag.svg">
-                </span>
-                <strong>Team Pandrover</strong> by <a href="https://xdgfx.com">Callum Morrison</a>. Content from
-                <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font Awesome</a>.
-                <br>
-                Want to learn more about the rally? Head over to the official
-                website - <a href="https://www.theadventurists.com/adventures/poles-of-inconvenience/">here!</a>
-            </p>
-        </div>
-    </footer>
-
-    <script>
-        var rellax = new Rellax('.rellax');
-    </script>
-</body>
-
+        <script>
+            var rellax = new Rellax(".rellax");
+        </script>
+    </body>
 </html>
