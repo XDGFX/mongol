@@ -1,1376 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Team Pandrover - Mongol Rally</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="website/custom.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-        <script defer src="website/app.js"></script>
+        <title>Team Pandrover · The Mongol Rally</title>
+        <meta name="description" content="Three Mongol Rallies in one 1.2-litre Fiat Panda: a lap of Britain in 2021, Georgia in 2022, and 10,000 km from Oxford to Almaty in 2024." />
+        <meta name="theme-color" content="#eb2020" />
+        <meta property="og:title" content="Team Pandrover · Oxford to Almaty" />
+        <meta property="og:description" content="10,000 km. Two blokes. One 1.2-litre Fiat Panda that very nearly didn't." />
+        <meta property="og:image" content="https://pandrover.com/website/media/2024/og.jpg" />
+        <meta property="og:type" content="website" />
         <link rel="shortcut icon" href="website/icons/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=Permanent+Marker&display=swap" />
+        <link rel="stylesheet" href="website/style.css" />
     </head>
 
-    <body onload="removePageloader()">
-        <!-- <a
-            class="donate-now-button is-hidden-mobile"
-            href="https://www.justgiving.com/fundraising/pandrover"
-        >
-            <img src="website/media/donate_now.png" alt="donate now" />
-        </a>
-
-        <a
-            class="donate-now-button is-hidden-tablet"
-            href="https://www.justgiving.com/fundraising/pandrover"
-        >
-            <img src="website/media/donate_now_mobile.png" alt="donate now" />
-        </a> -->
-
-        <div id="pageloader" class="pageloader is-active"></div>
-
-        <section class="hero is-fullheight">
-            <div class="hero-body is-paddingless">
-                <img
-                    src="website/media/panda_trailer.jpg"
-                    class="full"
-                    style="height: 100vh; position: relative; z-index: -7"
-                />
-
-                <!-- <img
-                    src="website/media/mongolia-front.png"
-                    class="rellax"
-                    data-rellax-speed="3"
-                    data-rellax-zindex="-3"
-                    style="
-                        position: absolute;
-                        z-index: -3;
-                        width: 10vw;
-                        min-width: 100px;
-                        top: 30%;
-                        left: 20%;
-                    "
-                />
-                <img
-                    src="website/media/mongolia-foreground.png"
-                    class="rellax full"
-                    data-rellax-speed="-2"
-                    data-rellax-zindex="-5"
-                    style="position: absolute; z-index: -5"
-                />
-                <img
-                    src="website/media/mongolia-background.jpg"
-                    class="rellax full"
-                    data-rellax-speed="-7"
-                    data-rellax-zindex="-7"
-                    style="position: absolute; z-index: -7"
-                /> -->
-
-                <!-- Centre the logo within the div -->
-                <div
-                    class="rellax"
-                    data-rellax-speed="2.5"
-                    data-rellax-zindex="-6"
-                    style="
-                        position: absolute;
-                        /* top: 2rem; */
-                        width: 100%;
-                        z-index: -6;
-                        display: flex;
-                        justify-content: center;
-                        filter: drop-shadow(0px 0px 10px black);
-                    "
-                >
-                    <!-- <p class="title has-text-centered" style="margin: 0;
-                padding-right: 60vw; color: #fff; text-shadow: 0px 0px 20px
-                grey">
-                    TEAM
-                </p>
-                <h1 class="title has-text-centered" style="font-size: 12vw;
-                margin-top: -2vw; color: #fff; text-shadow: 0px 0px 50px grey;">
-                    PANDROVER
-                </h1> -->
-                    <img
-                        src="website/media/pandrover_logo.png"
-                        style="width: 800px"
-                    />
+    <body>
+        <!-- ============================================================ -->
+        <!-- Hero                                                          -->
+        <!-- ============================================================ -->
+        <header class="hero">
+            <div class="hero-copy">
+                <div class="hero-top">
+                    <img class="hero-logo" src="website/media/pandrover_logo.png" alt="Team Pandrover" width="1000" height="500" />
+                    <span class="label">Mongol Rally 2021 · 2022 · 2024</span>
                 </div>
+                <h1 class="hero-title">
+                    <span>Oxford</span>
+                    <span class="paper">to</span>
+                    <span>Almaty</span>
+                </h1>
+                <div class="hero-bottom">
+                    <p class="hero-tagline">10,000 km. Two blokes. One 1.2-litre Fiat Panda that very nearly didn't.</p>
+                    <span class="hero-plate">2008 · CK58 VLR</span>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="website/media/2024/p6.jpg" srcset="website/media/2024/p6-sm.jpg 900w, website/media/2024/p6.jpg 1600w" sizes="(max-width: 899px) 100vw, 50vw" alt="The Panda, roof rack loaded, driving up a road towards snow-capped mountains in Kyrgyzstan" fetchpriority="high" />
+                <span class="sticker">Kyrgyzstan, 26 Aug 24</span>
+            </div>
+        </header>
+
+        <!-- ============================================================ -->
+        <!-- The story                                                     -->
+        <!-- ============================================================ -->
+        <section class="band band-black story">
+            <div class="wrap grid-2">
+                <div class="tally">
+                    <span>3 rallies</span>
+                    <span class="red">1 Panda</span>
+                    <span>0 finishes*</span>
+                    <span class="marker muted">* official ones, anyway</span>
+                </div>
+                <div class="prose">
+                    <p>I'm Callum Morrison, a robotics engineer from Oxford. Between 2021 and 2024 my mates and I entered the Mongol Rally three times in the same 1.2-litre Fiat Panda: a lap of Britain when COVID shut the borders, a 12,000&nbsp;km run to Georgia when the war did, and finally, in the summer of 2024, the real thing.</p>
+                    <p>Alberto Guerra Martinuzzi and I drove 10,000&nbsp;km from England to Almaty. We didn't reach the official finish. The Panda was limping, three spare wheels down, the wiring shredded, and Almaty was as far as it would go. It was enough.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- The film                                                      -->
+        <!-- ============================================================ -->
+        <section class="band film" id="film">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>The film</h2>
+                    <span class="tag">33 min · YouTube</span>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/XpphyQLKo2g" title="10,000km from England to Kazakhstan | A Mongol Rally 2024 Film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="caption">10,000km from England to Kazakhstan. A Mongol Rally 2024 film.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Odometer: the photos, pinned and scrolled along the route      -->
+        <!-- ============================================================ -->
+        <section class="odo" id="odometer">
+            <div class="odo-pin">
+                <div class="wrap odo-head">
+                    <div class="odo-counter">
+                        <span class="odo-km" id="odo-km">0</span>
+                        <span class="odo-unit">km</span>
+                    </div>
+                    <div class="odo-where">
+                        <span class="odo-place" id="odo-place">Oxford</span>
+                        <span class="odo-date" id="odo-date">Start</span>
+                    </div>
+                </div>
+                <div class="odo-viewport">
+                    <div class="odo-track" id="odo-track">
+                        <svg class="odo-route" id="odo-route" aria-hidden="true">
+                            <path id="odo-route-bg" fill="none" stroke-width="8" stroke-linecap="round"></path>
+                            <path id="odo-route-fg" fill="none" stroke-width="8" stroke-linecap="round"></path>
+                            <g id="odo-dots"></g>
+                        </svg>
+
+                        <article class="card card-text card-start" data-km="0" data-place="Oxford" data-date="Start">
+                            <span class="card-big">Oxford</span>
+                            <span class="card-small">0 km. Fully serviced. Optimistic.</span>
+                        </article>
+
+                        <figure class="card" data-km="5600" data-place="Western Kazakhstan" data-date="14 August 2024">
+                            <img src="website/media/2024/p1-sm.jpg" srcset="website/media/2024/p1-sm.jpg 900w, website/media/2024/p1.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda alone on the open steppe under a sky full of clouds" />
+                            <figcaption><b>01 · Western Kazakhstan</b><span>The desert after four days stuck on the Caspian ferry.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="6200" data-place="Uzbekistan" data-date="16 August 2024">
+                            <img src="website/media/2024/p2-sm.jpg" srcset="website/media/2024/p2-sm.jpg 900w, website/media/2024/p2.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda parked under the wing of an abandoned airliner in the desert" />
+                            <figcaption><b>02 · Uzbekistan</b><span>Abandoned aircraft rusting in the desert.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="7400" data-place="Pamir Highway" data-date="22 August 2024">
+                            <img src="website/media/2024/p3-sm.jpg" srcset="website/media/2024/p3-sm.jpg 900w, website/media/2024/p3.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda driving fast along a mountain road, roof rack loaded" />
+                            <figcaption><b>03 · Pamir Highway</b><span>One of the highest roads on Earth, 4,600 m at the top.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="7900" data-place="Tajikistan" data-date="24 August 2024">
+                            <img src="website/media/2024/p4-sm.jpg" srcset="website/media/2024/p4-sm.jpg 900w, website/media/2024/p4.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda stopped at the roadside in dry hills, doors open, tools out" />
+                            <figcaption><b>04 · Tajikistan</b><span>Roadside again. The control arm had gone.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="8900" data-place="Kyrgyzstan" data-date="26 August 2024">
+                            <img src="website/media/2024/p5-sm.jpg" srcset="website/media/2024/p5-sm.jpg 900w, website/media/2024/p5.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The back of the Panda with a spare wheel and full roof rack below snowy peaks" />
+                            <figcaption><b>05 · Kyrgyzstan</b><span>Everything we owned on the roof, peaks above.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="9200" data-place="Kyrgyzstan" data-date="26 August 2024">
+                            <img src="website/media/2024/p6-sm.jpg" srcset="website/media/2024/p6-sm.jpg 900w, website/media/2024/p6.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda heading up a road into the mountains" />
+                            <figcaption><b>06 · Kyrgyzstan</b><span>Into the mountains. Still going.</span></figcaption>
+                        </figure>
+
+                        <figure class="card" data-km="9700" data-place="Kyrgyzstan" data-date="26 August 2024">
+                            <img src="website/media/2024/p7-sm.jpg" srcset="website/media/2024/p7-sm.jpg 900w, website/media/2024/p7.jpg 1600w" sizes="(max-width: 899px) 90vw, 360px" loading="lazy" alt="The Panda parked on open ground at sunset" />
+                            <figcaption><b>07 · Kyrgyzstan</b><span>Last camp before the final push.</span></figcaption>
+                        </figure>
+
+                        <article class="card card-text card-end" data-km="10000" data-place="Almaty" data-date="It's done">
+                            <span class="card-big">Almaty</span>
+                            <span class="card-small">10,000 km. No spares left. Engine off.</span>
+                        </article>
+                    </div>
+                </div>
+                <p class="odo-hint wrap">Scroll to drive</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- What broke                                                    -->
+        <!-- ============================================================ -->
+        <section class="band band-red broke">
+            <div class="wrap grid-2">
                 <div>
-                    <p
-                        class="has-text-centered"
-                        style="
-                            position: absolute;
-                            z-index: -4;
-                            bottom: 3vh;
-                            width: 100%;
-                            color: #fff;
-                            font-weight: 600;
-                            text-shadow: 0px 0px 7px black;
-                        "
-                    >
-                        scroll for more<br />
-                        <span class="icon">
-                            <i class="fas fa-sort-down fa-2x"></i>
-                        </span>
-                    </p>
+                    <h2>What broke</h2>
+                    <p class="lede">In the order the film tells it. The car did its best to stop us and very nearly managed it.</p>
+                </div>
+                <ol class="broke-list">
+                    <li><span class="num">01</span><p><b>Istanbul.</b> Two lug nuts rattling loose, wheel nearly off.</p></li>
+                    <li><span class="num">02</span><p><b>Everywhere.</b> The oil leak that never stopped. Running rich. The camshaft sensor cable fraying.</p></li>
+                    <li><span class="num">03</span><p><b>Uzbekistan, 6am.</b> Exhaust smashed on an unfinished highway after an all-night drive.</p></li>
+                    <li><span class="num">04</span><p><b>Kazakhstan.</b> No brake pads anywhere in the country. A local mechanic made some work.</p></li>
+                    <li><span class="num">05</span><p><b>Kyrgyzstan.</b> Smashed sump, oil pressure dropping, engine on borrowed time.</p></li>
+                    <li><span class="num">06</span><p><b>Pamir Highway.</b> Lower control arm failed. Welded by a Tajik father who then put us up for the night.</p></li>
+                    <li><span class="num">07</span><p><b>200 km out.</b> Third tyre blows. No spares left. The patched one won't hold air, then the wheel implodes.</p></li>
+                    <li><span class="num">08</span><p><b>18 km out.</b> The wheel leaves the hub at a highway junction. Three lanes blocked. Final flat spare on, walking pace to 0 km.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Earlier rallies                                               -->
+        <!-- ============================================================ -->
+        <section class="band earlier">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Before that</h2>
+                    <span class="tag">Two warm-up rallies</span>
+                </div>
+                <div class="grid-2 earlier-grid">
+                    <article>
+                        <h3>2022 · Georgia</h3>
+                        <p>The war in Ukraine stopped the full rally in 2022, so the finish line moved to Georgia. Still a mighty 12,000 km round trip, and still an expedition of epic proportions.</p>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/8AQ5q1symf4" title="Team Pandrover · Mongol Rally 2022 film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>2021 · Poles of Inconvenience</h3>
+                        <p>COVID scuppered the full-fat rally in 2021, so we did the scaled-down version inside the United Kingdom instead. We still managed to make it difficult for ourselves.</p>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/w1D9OU9xMWM" title="Team Pandrover · Poles of Inconvenience 2021 film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="hero">
-            <div class="hero-body impact" style="z-index: -4">
-                <div class="container">
-                    <h2
-                        style="
-                            color: #fff;
-                            padding-bottom: 2em;
-                            font-style: italic;
-                        "
-                    >
-                        Here we go again!
-                    </h2>
-
-                    <p class="title is-hidden-mobile">
-                        I'm Callum&nbsp;Morrison, a robotics/design engineer
-                        from Oxford, and in the summer of 2024, I'm embarking on
-                        the greatest motoring adventure on the planet * - The
-                        Mongol Rally, alongside my good mates,
-                        Jack&nbsp;van&nbsp;Galen, and
-                        Alberto&nbsp;Guerra&nbsp;Martinuzzi.
-                    </p>
-                    <p class="subtitle is-hidden-tablet">
-                        <b>
-                            I'm Callum&nbsp;Morrison, a robotics/design engineer
-                            from Oxford, and in the summer of 2024, I'm
-                            embarking on the greatest motoring adventure on the
-                            planet * - The Mongol Rally, alongside my good
-                            mates, Jack&nbsp;van&nbsp;Galen, and
-                            Alberto&nbsp;Guerra&nbsp;Martinuzzi.
-                        </b>
-                    </p>
-                    <p>* second only to the M25 at rush hour.</p>
-                    <br />
-                    <div class="columns">
-                        <div
-                            class="column is-narrow is-vertical-center has-text-centered"
-                        >
-                            <span
-                                class="icon has-text-white"
-                                style="
-                                    width: 100%;
-                                    min-width: 100px;
-                                    height: 100px;
-                                "
-                            >
-                                <i class="fas fa-map-marked-alt fa-5x"></i>
-                            </span>
-                        </div>
-                        <div class="column">
-                            <p>
-                                This entails driving our (t)rusty 1.2 litre
-                                lunchbox from Oxford, UK all the way to east
-                                Kazakhstan;
-                                <!-- (home of the Mongolian Plateau, the Altai
-                                Mountains, and some camels). -->
-                                home of the majestic Borohoro Mountains,
-                                water-skiing squirrels of the Irtysh River, and
-                                the bustling city of Oskemen, which Wikipedia
-                                introduces as
-                                <i
-                                    >'the leader in Kazakhstan by the number of
-                                    people having respiratory problems and the
-                                    diseases of immune system'</i
-                                >. <br /><br />The Mongol Rally has been an
-                                annual event since 2004, raising money for
-                                charity ever since it's first rally with only
-                                six teams. Since then, it has grown to around
-                                300 teams every year. <br /><br />The rally has
-                                had a rough few years, with COVID outright
-                                cancelling the rally for 2020 and 2021, and the
-                                recent rallies being affected by Russia's
-                                invasion of Ukraine. But this year it's back in
-                                (almost) full force, and we're ready to take on
-                                the challenge.
-                            </p>
-                        </div>
-                    </div>
+        <!-- ============================================================ -->
+        <!-- Fundraising                                                   -->
+        <!-- ============================================================ -->
+        <section class="band band-black raised">
+            <div class="wrap grid-2">
+                <div>
+                    <h2>What we raised</h2>
+                    <p class="lede">Both pages are closed now. Thank you to everyone who chipped in.</p>
                 </div>
+                <ul class="raised-list">
+                    <li>
+                        <span class="amount">£215.91</span>
+                        <span class="for"><b>Cool Earth</b> · Mongol Rally 2024 · 17 donations</span>
+                        <a href="https://www.justgiving.com/page/pandrover">JustGiving page</a>
+                    </li>
+                    <li>
+                        <span class="amount">£610.45</span>
+                        <span class="for"><b>DEC Ukraine Humanitarian Appeal</b> · Mongol Rally 2022 · 20 donations</span>
+                        <a href="https://www.justgiving.com/fundraising/pandrover">JustGiving page</a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="section is-hidden-mobile">
-            <div class="columns">
-                <div class="column" style="position: relative">
-                    <a href="https://www.justgiving.com/page/pandrover">
-                        <img
-                            class="full link"
-                            style="height: 60vh"
-                            src="website/media/coolearth.jpg"
-                        />
-                        <p
-                            class="title overlay"
-                            style="transform: translate(-50%, -100%)"
-                        >
-                            Donate
-                        </p>
-                        <p
-                            class="overlay"
-                            style="transform: translate(-50%, 20%)"
-                        >
-                            Cool Earth
-                        </p>
-                    </a>
+        <!-- ============================================================ -->
+        <!-- Instagram                                                     -->
+        <!-- ============================================================ -->
+        <section class="band insta">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>The photos we posted</h2>
+                    <a class="tag tag-link" href="https://www.instagram.com/teampandrover/">@teampandrover</a>
                 </div>
+                <div class="insta-grid">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_SOc18owiD/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C_SOc18owiD/">View this post on Instagram</a></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_PirsKIAcI/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C_PirsKIAcI/">View this post on Instagram</a></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_KkjEco1lF/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C_KkjEco1lF/">View this post on Instagram</a></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-ne-fionNg/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C-ne-fionNg/">View this post on Instagram</a></blockquote>
+                </div>
+                <script async src="https://www.instagram.com/embed.js"></script>
             </div>
         </section>
 
-        <section class="section is-hidden-tablet">
-            <div class="columns">
-                <div class="column" style="position: relative">
-                    <a href="https://www.justgiving.com/page/pandrover">
-                        <img
-                            class="full"
-                            style="height: 30vh"
-                            src="website/media/coolearth.jpg"
-                        />
-                        <p
-                            class="title overlay"
-                            style="transform: translate(-50%, -100%)"
-                        >
-                            Donate
-                        </p>
-                        <p
-                            class="overlay"
-                            style="transform: translate(-50%, 20%)"
-                        >
-                            Cool Earth
-                        </p>
-                    </a>
+        <!-- ============================================================ -->
+        <!-- Sponsors                                                      -->
+        <!-- ============================================================ -->
+        <section class="band sponsors">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Thank you to our sponsors</h2>
+                    <span class="tag">They got us a long way</span>
                 </div>
+                <ul class="sponsor-grid">
+                    <li><a href="https://unmnd.com/"><img src="website/media/unmnd_logo.png" alt="unmnd" loading="lazy" /></a></li>
+                    <li><a href="https://www.facebook.com/HadleyServicesLtd/"><img src="website/media/hadley_logo.png" alt="Hadley Services" loading="lazy" /></a></li>
+                    <li><a href="https://fourby.co.uk/"><img src="website/media/fourby_logo.png" alt="Fourby" loading="lazy" /></a></li>
+                    <li><a href="https://www.knightengineservices.co.uk/"><img src="website/media/knight_logo.png" alt="Knight Engine Services" loading="lazy" /></a></li>
+                    <li><a href="https://www.dronevolution.co.uk/"><img src="website/media/drone_evolution_logo.png" alt="Drone Evolution" loading="lazy" /></a></li>
+                    <li><a href="https://www.mpdonline.co.uk/"><img src="website/media/mpd_logo.png" alt="MPD" loading="lazy" /></a></li>
+                    <li><a href="https://www.acegearboxes.co.uk/"><img src="website/media/ace_logo.png" alt="Ace Gearboxes" loading="lazy" /></a></li>
+                </ul>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container has-text-centered">
-                <h2 class="title">The Mongol Rally 2022 🇬🇪</h2>
-                <p class="is-size-5">
-                    Although the war in Ukraine prevented the full Mongol Rally
-                    from going ahead in 2022, we aren't a bunch that gives up
-                    easily. Therefore, the finish line was moved to the country
-                    of Georgia, still a mighty 12,000km round trip. <br /><br />
-                    This was an expedition of epic proportions, and we have now
-                    released our feature film showcasing the journey.
-                </p>
-                <br />
-                <div class="columns is-centered">
-                    <div class="column is-one-fifth"></div>
-                    <div class="column">
-                        <figure class="image is-16by9">
-                            <iframe
-                                class="has-ratio"
-                                width="640"
-                                height="360"
-                                src="https://www.youtube.com/embed/8AQ5q1symf4"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write;
-                        encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </figure>
-                    </div>
-                    <div class="column is-one-fifth"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section class="section">
-            <div class="container">
-                <h2 class="title sticker">And they're off!</h2>
-                <p>
-                    We've now set off on our travels, expecting to be on the
-                    road for over a month.
-                </p>
-                <br />
-                <h3 class="is-size-5">Want to keep up with our endeavour?</h3>
-                <p>
-                    The best way is through our Insta
-                    <a href="https://www.instagram.com/teampandrover/"
-                        >@teampandrover</a
-                    >. We'll be posting regular updates there all about the
-                    rally.
-                </p>
-                <br />
-                <div style="display: flex; justify-content: center">
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-captioned
-                        data-instgrm-permalink="https://www.instagram.com/p/Cfw7pjTrM9V/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        data-instgrm-version="14"
-                        style="
-                            background: #fff;
-                            border: 0;
-                            border-radius: 3px;
-                            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
-                                0 1px 10px 0 rgba(0, 0, 0, 0.15);
-                            margin: 1px;
-                            max-width: 540px;
-                            min-width: 326px;
-                            padding: 0;
-                            width: 99.375%;
-                            width: -webkit-calc(100% - 2px);
-                            width: calc(100% - 2px);
-                        "
-                    >
-                        <div style="padding: 16px">
-                            <a
-                                href="https://www.instagram.com/p/Cfw7pjTrM9V/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                style="
-                                    background: #ffffff;
-                                    line-height: 0;
-                                    padding: 0 0;
-                                    text-align: center;
-                                    text-decoration: none;
-                                    width: 100%;
-                                "
-                                target="_blank"
-                            >
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                    "
-                                >
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 50%;
-                                            flex-grow: 0;
-                                            height: 40px;
-                                            margin-right: 14px;
-                                            width: 40px;
-                                        "
-                                    ></div>
-                                    <div
-                                        style="
-                                            display: flex;
-                                            flex-direction: column;
-                                            flex-grow: 1;
-                                            justify-content: center;
-                                        "
-                                    >
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 4px;
-                                                flex-grow: 0;
-                                                height: 14px;
-                                                margin-bottom: 6px;
-                                                width: 100px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 4px;
-                                                flex-grow: 0;
-                                                height: 14px;
-                                                width: 60px;
-                                            "
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div style="padding: 19% 0"></div>
-                                <div
-                                    style="
-                                        display: block;
-                                        height: 50px;
-                                        margin: 0 auto 12px;
-                                        width: 50px;
-                                    "
-                                >
-                                    <svg
-                                        width="50px"
-                                        height="50px"
-                                        viewBox="0 0 60 60"
-                                        version="1.1"
-                                        xmlns="https://www.w3.org/2000/svg"
-                                        xmlns:xlink="https://www.w3.org/1999/xlink"
-                                    >
-                                        <g
-                                            stroke="none"
-                                            stroke-width="1"
-                                            fill="none"
-                                            fill-rule="evenodd"
-                                        >
-                                            <g
-                                                transform="translate(-511.000000, -20.000000)"
-                                                fill="#000000"
-                                            >
-                                                <g>
-                                                    <path
-                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div style="padding-top: 8px">
-                                    <div
-                                        style="
-                                            color: #3897f0;
-                                            font-family: Arial, sans-serif;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            font-weight: 550;
-                                            line-height: 18px;
-                                        "
-                                    >
-                                        View this post on Instagram
-                                    </div>
-                                </div>
-                                <div style="padding: 12.5% 0"></div>
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: row;
-                                        margin-bottom: 14px;
-                                        align-items: center;
-                                    "
-                                >
-                                    <div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                height: 12.5px;
-                                                width: 12.5px;
-                                                transform: translateX(0px)
-                                                    translateY(7px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                height: 12.5px;
-                                                transform: rotate(-45deg)
-                                                    translateX(3px)
-                                                    translateY(1px);
-                                                width: 12.5px;
-                                                flex-grow: 0;
-                                                margin-right: 14px;
-                                                margin-left: 2px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                height: 12.5px;
-                                                width: 12.5px;
-                                                transform: translateX(9px)
-                                                    translateY(-18px);
-                                            "
-                                        ></div>
-                                    </div>
-                                    <div style="margin-left: 8px">
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                flex-grow: 0;
-                                                height: 20px;
-                                                width: 20px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                width: 0;
-                                                height: 0;
-                                                border-top: 2px solid
-                                                    transparent;
-                                                border-left: 6px solid #f4f4f4;
-                                                border-bottom: 2px solid
-                                                    transparent;
-                                                transform: translateX(16px)
-                                                    translateY(-4px)
-                                                    rotate(30deg);
-                                            "
-                                        ></div>
-                                    </div>
-                                    <div style="margin-left: auto">
-                                        <div
-                                            style="
-                                                width: 0px;
-                                                border-top: 8px solid #f4f4f4;
-                                                border-right: 8px solid
-                                                    transparent;
-                                                transform: translateY(16px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                flex-grow: 0;
-                                                height: 12px;
-                                                width: 16px;
-                                                transform: translateY(-4px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                width: 0;
-                                                height: 0;
-                                                border-top: 8px solid #f4f4f4;
-                                                border-left: 8px solid
-                                                    transparent;
-                                                transform: translateY(-4px)
-                                                    translateX(8px);
-                                            "
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: column;
-                                        flex-grow: 1;
-                                        justify-content: center;
-                                        margin-bottom: 24px;
-                                    "
-                                >
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 4px;
-                                            flex-grow: 0;
-                                            height: 14px;
-                                            margin-bottom: 6px;
-                                            width: 224px;
-                                        "
-                                    ></div>
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 4px;
-                                            flex-grow: 0;
-                                            height: 14px;
-                                            width: 144px;
-                                        "
-                                    ></div></div
-                            ></a>
-                            <p
-                                style="
-                                    color: #c9c8cd;
-                                    font-family: Arial, sans-serif;
-                                    font-size: 14px;
-                                    line-height: 17px;
-                                    margin-bottom: 0;
-                                    margin-top: 8px;
-                                    overflow: hidden;
-                                    padding: 8px 0 7px;
-                                    text-align: center;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                "
-                            >
-                                <a
-                                    href="https://www.instagram.com/p/Cfw7pjTrM9V/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                    style="
-                                        color: #c9c8cd;
-                                        font-family: Arial, sans-serif;
-                                        font-size: 14px;
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        line-height: 17px;
-                                        text-decoration: none;
-                                    "
-                                    target="_blank"
-                                    >A post shared by Team Pandrover
-                                    (@teampandrover)</a
-                                >
-                            </p>
-                        </div>
-                    </blockquote>
-                </div>
-                <script async src="//www.instagram.com/embed.js"></script>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="title sticker">Live tracking</h2>
-                <h3 class="is-size-5">
-                    Want to see where we're stuck at 3am this Tuesday?
-                </h3>
-                <br />
-                <p>
-                    Follow us on the live tracking map!
-                    <a
-                        href="https://blogging.theadventurists.com/map/adventure/polesofinconvenience2022/team/team-pandrover"
-                    >
-                        <strong>The link to the map is here.</strong>
-                    </a>
-                    We can't promise it'll be entirely accurate all the time but
-                    we'll try our best!
-                </p>
-                <br />
-                <embed
-                    src="https://blogging.theadventurists.com/map/adventure/polesofinconvenience2022/team/team-pandrover"
-                    width="100%"
-                    height="500"
-                    frameborder="0"
-                    style="border: 4px solid #ed2020"
-                    allowfullscreen
-                />
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="title sticker">Fundraising for Ukraine</h2>
-                <h3 class="is-size-5">
-                    We're still fundraising for the DEC Ukraine Appeal.
-                </h3>
-                <p>
-                    There's a big red button to the bottom right of your screen
-                    if you want to donate, any amount is greatly appreciated!
-                </p>
-            </div>
-        </section>
-
-        <!-- <div class="columns">
-                    <div
-                        class="column is-narrow is-vertical-center has-text-centered"
-                    >
-                        <span
-                            class="icon"
-                            style="
-                                width: 100%;
-                                min-width: 160px;
-                                height: 100px;
-                                color: #eb2020;
-                            "
-                        >
-                            <i class="fas fa-globe-africa fa-5x"></i>
-                        </span>
-                    </div>
-                    <div class="column is-vertical-center">
-                        <div>
-                            <h3 class="is-size-5">
-                                1. Fundraising for Ukraine.
-                            </h3>
-                            The Disaster Emergency Committee is the official
-                            charity of this year's Mongol Rally. These guys are
-                            doing a brilliant job of putting money into the
-                            hands of trusted organisations in a way that gets
-                            help to where it’s needed fast.
-
-                            <p style="line-height: 0.5em">&nbsp;;</p>
-                            - £50 could provide blankets for 4 families to keep
-                            them warm
-                            <br />
-                            - £100 could provide emergency food for 5 people for
-                            one month
-                            <br />
-                            - £150 could provide blankets for 12 families to
-                            keep them warm
-                            <br />
-                            - £300 could provide emergency food for 6 families
-                            for one month
-                        </div>
-                    </div>
-                </div>
-
-                <div class="columns">
-                    <div
-                        class="column is-narrow is-vertical-center has-text-centered"
-                    >
-                        <span
-                            class="icon"
-                            style="
-                                width: 100%;
-                                min-width: 160px;
-                                height: 100px;
-                                color: #eb2020;
-                            "
-                        >
-                            <i class="fas fa-handshake fa-5x"></i>
-                        </span>
-                    </div>
-                    <div class="column is-vertical-center">
-                        <div>
-                            <h3 class="is-size-5">
-                                2. Sponsorship for the journey.
-                            </h3>
-                            <p>
-                                Want to help us reach the finish line?
-                                <span style="line-height: 0.5em">&nbsp;;</span>
-                                There are loads of ways of doing this, maybe you
-                                would like your shiny company logo displayed
-                                proudly on our bonnet for all to see, and in
-                                return you have some products or services that
-                                might help us?<span style="line-height: 0.5em"
-                                    >&nbsp;;</span
-                                >
-                                Or maybe you have some old jerry cans lying
-                                around, which you meant to throw out three years
-                                ago, but they might just stop us from getting
-                                stranded in the middle of nowhere? Get in
-                                contact below!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- <section class="section is-hidden-mobile">
-            <div class="container">
-                <nav class="level">
-                    <div class="level-left">
-                        <h3 class="subtitle">Shopping List</h3>
-                    </div>
-                    <div class="level-right">
-                        <span class="icon is-complete">
-                            <i class="fas fa-square"></i>
-                        </span>
-                        <span> Stuff we have </span>
-                        <div style="width: 16px"></div>
-                        <span class="icon is-incomplete">
-                            <i class="fas fa-square"></i>
-                        </span>
-                        <span> Stuff we don't </span>
-                    </div>
-                </nav>
-
-                <div class="columns is-multiline">
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-car"></i>
-                            </span>
-                            <span class="media-content"> A car </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-compact-disc"></i>
-                            </span>
-                            <span class="media-content"> New brakes </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-life-ring"></i>
-                            </span>
-                            <span class="media-content"> New clutch </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <img src="website/icons/tire-flat.svg" />
-                            </span>
-                            <span class="media-content">
-                                Spare wheels & tyres
-                            </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-trailer"></i>
-                            </span>
-                            <span class="media-content">
-                                Roof rack / trailer
-                            </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-complete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-car-battery"></i>
-                            </span>
-                            <span class="media-content"> Jump leads </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-passport"></i>
-                            </span>
-                            <span class="media-content"> Visas </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-syringe"></i>
-                            </span>
-                            <span class="media-content">
-                                Travel Vaccinations
-                            </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-gas-pump"></i>
-                            </span>
-                            <span class="media-content">
-                                Bulgarian petrol money
-                            </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-campground"></i>
-                            </span>
-                            <span class="media-content"> A tent </span>
-                        </div>
-                    </div>
-
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-video"></i>
-                            </span>
-                            <span class="media-content"> Video camera </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-wrench"></i>
-                            </span>
-                            <span class="media-content"> Hand tools </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-utensils"></i>
-                            </span>
-                            <span class="media-content"> Food </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-spray-can"></i>
-                            </span>
-                            <span class="media-content"> Vehicle wrap </span>
-                        </div>
-                    </div>
-                    <div class="column is-3">
-                        <div
-                            class="media notification is-vertical-center is-incomplete"
-                        >
-                            <span class="icon is-medium media-left">
-                                <i class="fas fa-2x fa-oil-can"></i>
-                            </span>
-                            <span class="media-content"> Spare parts </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <p class="is-size-5">
-                    We really appreciate any help, even if it's as little as
-                    slipping our journey into a conversation with your family
-                    dog-walker, and sliding them the link to our website. Thank
-                    you!
-                </p>
-                <br />
-                <p class="is-size-5 has-text-right">~ Callum</p>
-            </div>
-        </section> -->
-
-        <section class="section">
-            <div class="container has-text-centered">
-                <h2 class="title">The Poles Of Inconvenience 2021 🇬🇧</h2>
-                <p class="is-size-5">
-                    Although COVID scuppered our plans for the full-fat Mongol
-                    Rally in 2021, we did manage to partake in the Mongol Rally:
-                    Poles Of Inconvenience. This was a scaled down version,
-                    within the confines of the United Kingdom. We did still
-                    manage to make it difficult for ourselves however...
-                </p>
-                <br />
-                <div class="columns is-centered">
-                    <div class="column is-one-fifth"></div>
-                    <div class="column">
-                        <figure class="image is-16by9">
-                            <iframe
-                                class="has-ratio"
-                                width="640"
-                                height="360"
-                                src="https://www.youtube.com/embed/w1D9OU9xMWM"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write;
-                        encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </figure>
-                    </div>
-                    <div class="column is-one-fifth"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container has-text-centered">
-                <h2 class="title">Want to keep up with our endeavours?</h2>
-                <p class="is-size-5">
-                    Follow us over on Instagram
-                    <a href="https://www.instagram.com/teampandrover/"
-                        >@teampandrover</a
-                    >!
-                </p>
-                <br />
-                <div style="display: flex; justify-content: center">
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-captioned
-                        data-instgrm-permalink="https://www.instagram.com/p/CpPd6dXtdjx/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        data-instgrm-version="14"
-                        style="
-                            background: #fff;
-                            border: 0;
-                            border-radius: 3px;
-                            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
-                                0 1px 10px 0 rgba(0, 0, 0, 0.15);
-                            margin: 1px;
-                            max-width: 540px;
-                            min-width: 326px;
-                            padding: 0;
-                            width: 99.375%;
-                            width: -webkit-calc(100% - 2px);
-                            width: calc(100% - 2px);
-                        "
-                    >
-                        <div style="padding: 16px">
-                            <a
-                                href="https://www.instagram.com/p/CpPd6dXtdjx/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                style="
-                                    background: #ffffff;
-                                    line-height: 0;
-                                    padding: 0 0;
-                                    text-align: center;
-                                    text-decoration: none;
-                                    width: 100%;
-                                "
-                                target="_blank"
-                            >
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                    "
-                                >
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 50%;
-                                            flex-grow: 0;
-                                            height: 40px;
-                                            margin-right: 14px;
-                                            width: 40px;
-                                        "
-                                    ></div>
-                                    <div
-                                        style="
-                                            display: flex;
-                                            flex-direction: column;
-                                            flex-grow: 1;
-                                            justify-content: center;
-                                        "
-                                    >
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 4px;
-                                                flex-grow: 0;
-                                                height: 14px;
-                                                margin-bottom: 6px;
-                                                width: 100px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 4px;
-                                                flex-grow: 0;
-                                                height: 14px;
-                                                width: 60px;
-                                            "
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div style="padding: 19% 0"></div>
-                                <div
-                                    style="
-                                        display: block;
-                                        height: 50px;
-                                        margin: 0 auto 12px;
-                                        width: 50px;
-                                    "
-                                >
-                                    <svg
-                                        width="50px"
-                                        height="50px"
-                                        viewBox="0 0 60 60"
-                                        version="1.1"
-                                        xmlns="https://www.w3.org/2000/svg"
-                                        xmlns:xlink="https://www.w3.org/1999/xlink"
-                                    >
-                                        <g
-                                            stroke="none"
-                                            stroke-width="1"
-                                            fill="none"
-                                            fill-rule="evenodd"
-                                        >
-                                            <g
-                                                transform="translate(-511.000000, -20.000000)"
-                                                fill="#000000"
-                                            >
-                                                <g>
-                                                    <path
-                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div style="padding-top: 8px">
-                                    <div
-                                        style="
-                                            color: #3897f0;
-                                            font-family: Arial, sans-serif;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            font-weight: 550;
-                                            line-height: 18px;
-                                        "
-                                    >
-                                        View this post on Instagram
-                                    </div>
-                                </div>
-                                <div style="padding: 12.5% 0"></div>
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: row;
-                                        margin-bottom: 14px;
-                                        align-items: center;
-                                    "
-                                >
-                                    <div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                height: 12.5px;
-                                                width: 12.5px;
-                                                transform: translateX(0px)
-                                                    translateY(7px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                height: 12.5px;
-                                                transform: rotate(-45deg)
-                                                    translateX(3px)
-                                                    translateY(1px);
-                                                width: 12.5px;
-                                                flex-grow: 0;
-                                                margin-right: 14px;
-                                                margin-left: 2px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                height: 12.5px;
-                                                width: 12.5px;
-                                                transform: translateX(9px)
-                                                    translateY(-18px);
-                                            "
-                                        ></div>
-                                    </div>
-                                    <div style="margin-left: 8px">
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                border-radius: 50%;
-                                                flex-grow: 0;
-                                                height: 20px;
-                                                width: 20px;
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                width: 0;
-                                                height: 0;
-                                                border-top: 2px solid
-                                                    transparent;
-                                                border-left: 6px solid #f4f4f4;
-                                                border-bottom: 2px solid
-                                                    transparent;
-                                                transform: translateX(16px)
-                                                    translateY(-4px)
-                                                    rotate(30deg);
-                                            "
-                                        ></div>
-                                    </div>
-                                    <div style="margin-left: auto">
-                                        <div
-                                            style="
-                                                width: 0px;
-                                                border-top: 8px solid #f4f4f4;
-                                                border-right: 8px solid
-                                                    transparent;
-                                                transform: translateY(16px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                background-color: #f4f4f4;
-                                                flex-grow: 0;
-                                                height: 12px;
-                                                width: 16px;
-                                                transform: translateY(-4px);
-                                            "
-                                        ></div>
-                                        <div
-                                            style="
-                                                width: 0;
-                                                height: 0;
-                                                border-top: 8px solid #f4f4f4;
-                                                border-left: 8px solid
-                                                    transparent;
-                                                transform: translateY(-4px)
-                                                    translateX(8px);
-                                            "
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div
-                                    style="
-                                        display: flex;
-                                        flex-direction: column;
-                                        flex-grow: 1;
-                                        justify-content: center;
-                                        margin-bottom: 24px;
-                                    "
-                                >
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 4px;
-                                            flex-grow: 0;
-                                            height: 14px;
-                                            margin-bottom: 6px;
-                                            width: 224px;
-                                        "
-                                    ></div>
-                                    <div
-                                        style="
-                                            background-color: #f4f4f4;
-                                            border-radius: 4px;
-                                            flex-grow: 0;
-                                            height: 14px;
-                                            width: 144px;
-                                        "
-                                    ></div></div
-                            ></a>
-                            <p
-                                style="
-                                    color: #c9c8cd;
-                                    font-family: Arial, sans-serif;
-                                    font-size: 14px;
-                                    line-height: 17px;
-                                    margin-bottom: 0;
-                                    margin-top: 8px;
-                                    overflow: hidden;
-                                    padding: 8px 0 7px;
-                                    text-align: center;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                "
-                            >
-                                <a
-                                    href="https://www.instagram.com/p/CpPd6dXtdjx/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                    style="
-                                        color: #c9c8cd;
-                                        font-family: Arial, sans-serif;
-                                        font-size: 14px;
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        line-height: 17px;
-                                        text-decoration: none;
-                                    "
-                                    target="_blank"
-                                    >A post shared by Team Pandrover
-                                    (@teampandrover)</a
-                                >
-                            </p>
-                        </div>
-                    </blockquote>
-                    <script async src="//www.instagram.com/embed.js"></script>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="title sticker">Our lovely sponsors</h2>
-                <div class="section has-background-white-ter">
-                    <div class="columns is-multiline">
-                        <div class="column is-4">
-                            <a href="https://unmnd.com/">
-                                <img src="website/media/unmnd_logo.png" />
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a
-                                href="https://www.facebook.com/HadleyServicesLtd/"
-                            >
-                                <img src="website/media/hadley_logo.png" />
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a href="https://fourby.co.uk/">
-                                <img src="website/media/fourby_logo.png" />
-                            </a>
-                        </div>
-                        <div
-                            class="column is-3 is-flex is-align-items-center is-align-content-center"
-                        >
-                            <a
-                                href="https://www.knightengineservices.co.uk/"
-                                class="is-flex is-align-items-center is-jusify-content-center is-align-content-center"
-                            >
-                                <img src="website/media/knight_logo.png" />
-                            </a>
-                        </div>
-                        <div
-                            class="column is-3 is-flex is-align-items-center is-align-content-center"
-                        >
-                            <a
-                                href="https://www.dronevolution.co.uk/"
-                                class="is-flex is-align-items-center is-jusify-content-center is-align-content-center"
-                            >
-                                <img
-                                    src="website/media/drone_evolution_logo.png"
-                                />
-                            </a>
-                        </div>
-                        <div class="column is-3">
-                            <a href="https://www.mpdonline.co.uk/">
-                                <img src="website/media/mpd_logo.png" />
-                            </a>
-                        </div>
-                        <div class="column is-3">
-                            <a href="https://www.acegearboxes.co.uk/">
-                                <img src="website/media/ace_logo.png" />
-                            </a>
-                        </div>
-                        <!-- <div class="column is-4">
-                            <a>
-                                <img src="website/media/ybh.svg" />
-                            </a>
-                        </div> -->
-                        <!-- <div class="column is-4">
-                        <img src="website/media/ybh.svg">
-                    </div> -->
-                    </div>
-                </div>
-
-                <br />
-                <p class="is-size-5"></p>
-            </div>
-        </section>
-
-        <footer class="footer has-background-white-ter">
-            <div class="content has-text-centered">
-                <p>
-                    <span class="icon is-small">
-                        <img src="website/media/mongolia-flag.svg" />
-                    </span>
-                    <strong>Team Pandrover</strong> by
-                    <a href="https://xdgfx.com">Callum Morrison</a>. Content
-                    from <a href="https://unsplash.com/">Unsplash</a> and
-                    <a href="https://fontawesome.com/">Font Awesome</a>.
-                    <br />
-                    Want to learn more about the rally? Head over to the
-                    official website -
-                    <a href="https://www.theadventurists.com/mongol-rally/"
-                        >here!</a
-                    >
-                </p>
+        <footer class="band band-black foot">
+            <div class="wrap">
+                <p><b>Team Pandrover</b> by <a href="https://xdgfx.com">Callum Morrison</a>. Photos by the team. Type from <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+                <p>Want to know more about the rally? Head over to <a href="https://www.theadventurists.com/mongol-rally/">The Adventurists</a>.</p>
             </div>
         </footer>
 
-        <script>
-            var rellax = new Rellax(".rellax");
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="website/app.js"></script>
     </body>
 </html>
