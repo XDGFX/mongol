@@ -80,7 +80,7 @@
             // kilometres: interpolate between the two stops around the read line
             var km = stops[0].km, idx = 0;
             if (read <= stops[0].x) { km = stops[0].km; idx = 0; }
-            else if (read >= stops[stops.length - 1].x) { km = stops[stops.length - 1].km; idx = stops.length - 1; }
+            else if (read >= stops[stops.length - 1].x - 4) { km = stops[stops.length - 1].km; idx = stops.length - 1; }
             else {
                 for (var i = 0; i < stops.length - 1; i++) {
                     if (read >= stops[i].x && read <= stops[i + 1].x) {
