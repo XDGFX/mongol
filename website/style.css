@@ -362,6 +362,7 @@ p:last-child { margin-bottom: 0; }
     line-height: 0.9;
     text-transform: uppercase;
 }
+.card-big-sm { font-size: clamp(30px, 4vh, 44px); }
 .card-small { font-size: 15px; font-weight: 500; line-height: 1.4; }
 .card-start .card-small { color: var(--paper-dim); }
 
@@ -421,10 +422,11 @@ p:last-child { margin-bottom: 0; }
     gap: 28px 32px;
 }
 .broke-list li { display: flex; flex-direction: column; gap: 6px; }
-.broke-list .num {
+.broke-list .what {
     font-family: var(--display);
     font-size: 40px;
-    line-height: 1;
+    line-height: 0.95;
+    text-transform: uppercase;
     color: var(--paper);
 }
 .broke-list p { font-size: 16px; line-height: 1.45; }
@@ -552,6 +554,7 @@ p:last-child { margin-bottom: 0; }
 }
 .chapter-map { grid-column: span 7; border: 4px solid var(--ink); background: var(--paper); }
 .chapter-map img { width: 100%; height: auto; display: block; }
+.map-caption { padding: 10px 14px 12px 14px; margin: 0; border-top: 4px solid var(--ink); }
 .chapter-map-tall { grid-column: span 3; }
 .chapter-map-tall + .prose { grid-column: span 8; }
 .chapter-body .prose { grid-column: span 5; font-size: 18px; line-height: 1.6; }
@@ -615,5 +618,3 @@ p:last-child { margin-bottom: 0; }
     .gallery figure.wide { grid-column: span 1; }
 }
 
-/* What broke: year labels are wider than two digits */
-.broke-list .num { font-size: 34px; }
