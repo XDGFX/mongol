@@ -570,6 +570,8 @@ p:last-child { margin-bottom: 0; }
 .chapter-map img { width: 100%; height: auto; display: block; }
 .map-caption { padding: 10px 14px 12px 14px; margin: 0; border-top: 4px solid var(--ink); }
 .chapter-map-tall { grid-column: span 3; }
+.chapter-map-wide { grid-column: 1 / -1; }
+.chapter-map-wide + .prose { grid-column: 1 / span 8; margin-top: 8px; }
 .chapter-map-tall + .prose { grid-column: span 8; }
 .chapter-body .prose { grid-column: span 5; font-size: 18px; line-height: 1.6; }
 .chapter-body .prose p + p { margin-top: 1.1em; }
