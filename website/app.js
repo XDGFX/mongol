@@ -13,12 +13,13 @@
     var kmEl = document.getElementById("odo-km");
     var placeEl = document.getElementById("odo-place");
     var dateEl = document.getElementById("odo-date");
+    var rallyEl = document.getElementById("odo-rally");
     var routeBg = document.getElementById("odo-route-bg");
     var routeFg = document.getElementById("odo-route-fg");
     var dotsG = document.getElementById("odo-dots");
     var cards = Array.prototype.slice.call(track.querySelectorAll(".card"));
     var stops = cards.map(function (c) {
-        return { el: c, km: +c.dataset.km, place: c.dataset.place, date: c.dataset.date, x: 0, y: 0 };
+        return { el: c, km: +c.dataset.km, place: c.dataset.place, date: c.dataset.date, rally: c.dataset.rally || "", x: 0, y: 0 };
     });
 
     var READ = 0.22; // fraction of the viewport width that acts as the "now" line
@@ -35,6 +36,7 @@
         for (var j = 0; j < dots.length; j++) dots[j].classList.toggle("on", j === i);
         placeEl.textContent = stops[i].place;
         dateEl.textContent = stops[i].date;
+        if (rallyEl) rallyEl.textContent = stops[i].rally;
     }
 
     // A smooth Catmull-Rom curve through every card's pin point.

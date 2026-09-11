@@ -265,6 +265,12 @@ p:last-child { margin-bottom: 0; }
     text-align: right;
     gap: 6px;
 }
+.odo-rally {
+    font-family: var(--marker);
+    font-size: clamp(16px, 2vh, 20px);
+    color: var(--red);
+    margin-bottom: 4px;
+}
 .odo-place {
     font-family: var(--display);
     font-size: clamp(28px, 3.2vh, 40px);
@@ -356,6 +362,8 @@ p:last-child { margin-bottom: 0; }
     color: var(--paper);
 }
 .card-end { background: var(--red); color: var(--ink); }
+.card-rally { background: var(--ink); color: var(--paper); border-top: 10px solid var(--red); }
+.card-label { font-family: var(--marker); font-size: 18px; color: var(--red); }
 .card-big {
     font-family: var(--display);
     font-size: clamp(44px, 6vh, 72px);
@@ -389,7 +397,13 @@ p:last-child { margin-bottom: 0; }
     }
     .odo-km { font-size: clamp(56px, 16vw, 96px); }
     .odo-unit { font-size: clamp(24px, 6vw, 36px); }
-    .odo-place { font-size: 22px; }
+    .odo-rally {
+    font-family: var(--marker);
+    font-size: clamp(16px, 2vh, 20px);
+    color: var(--red);
+    margin-bottom: 4px;
+}
+.odo-place { font-size: 22px; }
     .odo-viewport { overflow: visible; }
     .odo-track {
         --lane: 0px;
@@ -618,3 +632,8 @@ p:last-child { margin-bottom: 0; }
     .gallery figure.wide { grid-column: span 1; }
 }
 
+
+/* Feature photo: the one that matters */
+.chapter-body > .feature { grid-column: 1 / -1; margin: 32px auto 0 auto; max-width: 720px; width: 100%; background: #ffffff; padding: 12px 12px 18px 12px; box-shadow: 0 24px 48px -20px rgba(17, 17, 17, 0.5); transform: rotate(-0.6deg); }
+.feature img { width: 100%; height: auto; display: block; }
+.feature figcaption { padding: 14px 6px 0 6px; font-size: 17px; line-height: 1.5; color: var(--ink); font-weight: 500; }
